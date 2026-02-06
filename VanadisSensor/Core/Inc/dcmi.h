@@ -35,12 +35,13 @@ extern "C" {
 extern DCMI_HandleTypeDef hdcmi;
 
 /* USER CODE BEGIN Private defines */
-
+extern DMA_HandleTypeDef hdma_dcmi;
 /* USER CODE END Private defines */
 
 void MX_DCMI_Init(void);
 
 /* USER CODE BEGIN Prototypes */
+
 
 /* USER CODE END Prototypes */
 
