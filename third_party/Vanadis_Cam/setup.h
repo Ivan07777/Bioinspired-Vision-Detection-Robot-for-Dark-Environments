@@ -1,10 +1,6 @@
-/*
-Originally from:
-https://github.com/indrekluuk/LiveOV7670
-
-Renamed for integration into this project.
-Used with permission from the author.
-*/
+//
+// Created by indrek on 1.05.2016.
+//
 
 #ifndef LIVEOV7670_SETUP_H
 #define LIVEOV7670_SETUP_H

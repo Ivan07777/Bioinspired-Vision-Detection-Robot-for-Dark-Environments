@@ -6,11 +6,11 @@ import os
 model = YOLO("best.pt")
 
 # Confidence threshold
-confidence_threshold = 0.1
+confidence_threshold = 0.80
 
 # image paths array from folder
 image_paths = []
-folder_path = "test1/test1_RawImages"
+folder_path = "blue_patterns/test1/test1_RawImages"
 for filename in os.listdir(folder_path):
     full_path = os.path.join(folder_path, filename)
     if os.path.isfile(full_path):
@@ -22,7 +22,7 @@ print("\nBlue Light detection")
 results = model(image_paths, conf=confidence_threshold)
 
 # Output folder
-save = "test1/test1_results"
+save = "blue_patterns/test2/test2_results"
 os.makedirs(save, exist_ok=True)
 
 # Process each image
@@ -46,4 +46,4 @@ for idx, result in enumerate(results):
     cv.imwrite(save_path, plotted)
 
     # Show image with detections
-    result.show()
+    #result.show()

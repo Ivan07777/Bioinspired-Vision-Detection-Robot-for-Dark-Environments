@@ -1,10 +1,7 @@
-/*
-Originally from:
-https://github.com/indrekluuk/LiveOV7670
 
-Renamed for integration into this project.
-Used with permission from the author.
-*/
+
+
+
 
 // change setup.h to switch between buffered and pixel-by-pixel processing
 #include "setup.h"

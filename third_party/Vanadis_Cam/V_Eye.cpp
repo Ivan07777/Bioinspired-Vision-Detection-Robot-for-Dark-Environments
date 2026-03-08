@@ -1,11 +1,8 @@
-/*
-Originally from:
-https://github.com/indrekluuk/LiveOV7670
+//
+// Created by indrek on 1.05.2016.
+//
 
-Renamed for integration into this project.
-Used with permission from the author.
-*/
-
+// set EXAMPLE to EXAMPLE_UART in setup.h to activate
 #include "setup.h"
 #if EXAMPLE == 3
 #include "Arduino.h"
@@ -293,12 +290,18 @@ void initializeScreenAndCamera() {
 
   Serial.begin(baud);
   if (camera.init()) {
+    camera.setRegister(0x13, 0x00);   // brighter image
+
+    camera.setRegister(0x10, 35);
+    
     sendBlankFrame(COLOR_GREEN);
     delay(1000);
   } else {
     sendBlankFrame(COLOR_RED);
     delay(3000);
   }
+
+  
 }
 
 
