@@ -3,11 +3,11 @@ val: ../valid/images
 test: ../test/images
 
 nc: 3
-names: ['mate', 'neutral', 'prey']
+names: ['Mate', 'Neutral', 'Prey']
 
 roboflow:
   workspace: resistor-classification-scanner
-  project: blue_patterns
-  version: 2
+  project: final_blue-bwnea
+  version: 6
   license: CC BY 4.0
-  url: https://universe.roboflow.com/resistor-classification-scanner/blue_patterns/dataset/2
+  url: https://universe.roboflow.com/resistor-classification-scanner/final_blue-bwnea/dataset/6
